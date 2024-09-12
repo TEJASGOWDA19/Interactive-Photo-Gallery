@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Photo Gallery</h1>
+        <nav>
+            <button data-filter="all">All</button>
+            <button data-filter="nature">Nature</button>
+            <button data-filter="architecture">Architecture</button>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature1.jpg" alt="Nature Image 1">
+                <div class="caption">Beautiful forest</div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature2.jpg" alt="Nature Image 2">
+                <div class="caption">Beautiful forest</div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="images/architecture1.jpg" alt="Architecture Image 1">
+                <div class="caption">Stunning skyscraper</div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="images/architecture2.jpg" alt="Architecture Image 2">
+                <div class="caption">Stunning skyscraper</div>
+            </div>
+            <!-- Add more gallery items here -->
+        </div>
+    </main>
+    
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
